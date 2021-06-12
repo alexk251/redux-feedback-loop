@@ -8,7 +8,7 @@ Inital Setup
     [x] configure database and pool.js link
     [x] router with all get and post routes
     [x] set up redux and provider
-    [ ] set up reducers (one for each component?)
+    [x] set up reducers (one for each component?)
 Components
     [ ] App.js
         [ ] components import
