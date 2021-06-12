@@ -3,8 +3,9 @@ import axios from 'axios';
 import './App.css';
 
 //import components
-import Feeling from '../Feeling/Feeling'
-import Understanding from '../Understanding/Understanding'
+import Feeling from '../Feeling/Feeling';
+import Understanding from '../Understanding/Understanding';
+import Support from '../Support/Support'
 
 // router imports
 import {Route, HashRouter as Router} from 'react-router-dom';
@@ -25,7 +26,7 @@ function App() {
         <Understanding />
       </Route>
       <Route path='/support'>
-
+        <Support />
       </Route>
       <Route path='/comments' exact>
 
