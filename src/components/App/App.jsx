@@ -5,7 +5,8 @@ import './App.css';
 //import components
 import Feeling from '../Feeling/Feeling';
 import Understanding from '../Understanding/Understanding';
-import Support from '../Support/Support'
+import Support from '../Support/Support';
+import Comments from '../Comments/Comments'
 
 // router imports
 import {Route, HashRouter as Router} from 'react-router-dom';
@@ -29,7 +30,7 @@ function App() {
         <Support />
       </Route>
       <Route path='/comments' exact>
-
+        <Comments />
       </Route>
       <Route path='/review' exact>
 
