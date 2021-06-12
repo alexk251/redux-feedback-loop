@@ -1,16 +1,16 @@
 import { useHistory } from 'react-router';
 import {useDispatch} from 'react-redux'
 
-function Feeling() {
+function Understanding() {
     // make use dispatch accessible through 'dispatch'
     const dispatch = useDispatch();
 
     return (
         <>
-            feeling
+            Understanding
         </>
     )
 
 }
 
-export default Feeling;
+export default Understanding;
