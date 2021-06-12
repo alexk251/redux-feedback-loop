@@ -14,38 +14,39 @@ Components
         [ ] components import and setup component files
         [x] routes to components
     [ ] Feeling page 1
-        [ ] import export
+        [x] import export
         [ ] dispatch/submit to reducer
         [ ] handlevaluechange
         [ ] input validation
         [ ] return
     [ ] Understanding page 2
-        [ ] import export
+        [x] import export
         [ ] dispatch/submit to reducer
         [ ] handlevaluechange
         [ ] input validation
         [ ] return
     [ ] Support 3
-        [ ] import export
+        [x] import export
         [ ] dispatch/submit to reducer
         [ ] handlevaluechange
         [ ] input validation
         [ ] route change
         [ ] return
     [ ] comments 4
-        [ ] import export
+        [x] import export
         [ ] dispatch/submit to reducer
         [ ] handlevaluechange
         [ ] return
         [ ] route change
-    [ ] Review and Submit 5
+    [x] Review and Submit 5
+        [x] import export
+        [x] dispatch/submit to database
+        [x] handlevaluechange
+        [x] return
+        [x] route change
+    [ ] Reset page 6
         [ ] import export
-        [ ] dispatch/submit to database
-        [ ] handlevaluechange
-        [ ] return
-        [ ] route change
-    [ ] Success/Reset page 6
-        [ ] import export
+        [ ] dispatch reset submit call
         [ ] return
         [ ] route change to page 1
         [ ] reset values in reducers

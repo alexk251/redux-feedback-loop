@@ -1,13 +1,12 @@
 import axios from 'axios';
 import React from 'react';
 import { useHistory } from 'react-router';
-import {useSelector, useDispatch} from 'react-redux'
+import {useSelector} from 'react-redux'
 
 
 
 function Review() {
 
-    const dispatch = useDispatch();
     const history = useHistory();
 
     //selecting varibles from the store of reducers
@@ -25,7 +24,6 @@ function Review() {
         })
         .then(response => {
             console.log(response)
-            dispatch({type:'SUBMITTED'})
             history.push('/success')
         }).catch(err => {
             console.log(err);
