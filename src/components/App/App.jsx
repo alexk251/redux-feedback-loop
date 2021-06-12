@@ -2,6 +2,9 @@ import React from 'react';
 import axios from 'axios';
 import './App.css';
 
+//import components
+import Feeling from '../Feeling/Feeling'
+
 // router imports
 import {Route, HashRouter as Router} from 'react-router-dom';
 
@@ -15,7 +18,7 @@ function App() {
         <h4>Don't forget it!</h4>
       </header>
       <Route path='/' exact>
-        
+        <Feeling />
       </Route>
       <Route path='/feeling'>
 
