@@ -10,7 +10,7 @@ import { createStore, combineReducers, applyMiddleware } from 'redux';
 
 
 
-
+//store for reducers
 const reduxStore = createStore(
     combineReducers({
         feeling,understanding,support,comments

@@ -7,7 +7,7 @@ Inital Setup
     [x] npm install all packages (logger, react router, redux, redux react)
     [x] configure database and pool.js link
     [x] router with all get and post routes
-    [ ] set up redux and provider
+    [x] set up redux and provider
     [ ] set up reducers (one for each component?)
 Components
     [ ] App.js
