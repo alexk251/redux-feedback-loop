@@ -2,6 +2,8 @@ const express = require('express');
 const router = express.Router();
 const pool = require('../modules/pool');
 
+
+// Get all feedback
 router.get('/', (req, res) => {
     console.log('GET /feedback');
     pool.query('SELECT * from "feedback";').then((result) => {
@@ -12,7 +14,7 @@ router.get('/', (req, res) => {
     });
 })
 
-// POST a new order
+// POST new feedback
 router.post('/', async (req, res) => {
     const client = await pool.connect();
 

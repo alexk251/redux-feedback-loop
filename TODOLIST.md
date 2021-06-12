@@ -6,7 +6,7 @@ BASE MODE:
 Inital Setup
     [x] npm install all packages (logger, react router, redux, redux react)
     [x] configure database and pool.js link
-    [ ] router with all get and post routes
+    [x] router with all get and post routes
     [ ] set up redux and provider
     [ ] set up reducers (one for each component?)
 Components
