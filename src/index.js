@@ -12,7 +12,7 @@ import { createStore, combineReducers, applyMiddleware } from 'redux';
 const feeling = (state = {}, action) => {
     switch (action.type) {
         // case of add feeling
-        case 'ADD' :
+        case 'ADD_FEELING' :
             return {
                 feeling: action.payload
             };
@@ -29,7 +29,7 @@ const feeling = (state = {}, action) => {
 const understanding = (state = {}, action) => {
     switch (action.type) {
         // case of add understanding
-        case 'ADD' :
+        case 'ADD_UNDERSTANDING' :
             return {
                 understanding: action.payload
             };
@@ -46,7 +46,7 @@ const understanding = (state = {}, action) => {
 const support = (state = {}, action) => {
     switch (action.type) {
         // case of add support
-        case 'ADD' :
+        case 'ADD_SUPPORT' :
             return {
                 support: action.payload
             };
@@ -63,7 +63,7 @@ const support = (state = {}, action) => {
 const comments = (state = {}, action) => {
     switch (action.type) {
         // case of add comments
-        case 'ADD' :
+        case 'ADD_COMMENTS' :
             return {
                 comments: action.payload
             };
