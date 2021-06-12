@@ -6,13 +6,13 @@ BASE MODE:
 Inital Setup
     [x] npm install all packages (logger, react router, redux, redux react)
     [x] configure database and pool.js link
-    [x] router with all get and post routes
+    [x] router with all get and post routes (test post router might need 2nd half i deleted)
     [x] set up redux and provider
     [x] set up reducers (one for each component?)
 Components
     [ ] App.js
-        [ ] components import
-        [ ] conditially render progess on 1-4 pages
+        [ ] components import and setup component files
+        [x] routes to components
     [ ] Feeling page 1
         [ ] import export
         [ ] dispatch/submit to reducer
