@@ -41,4 +41,14 @@ router.post('/', async (req, res) => {
     }
 });
 
+// DELETE an order
+router.delete('/:id', (req, res) => {
+    pool.query('DELETE FROM "feedback" WHERE id=$1', [req.params.id]).then((result) => {
+        res.sendStatus(200);
+    }).catch((error) => {
+        console.log('Error DELETE /feedback', error);
+        res.sendStatus(500);
+    })
+});
+
 module.exports = router;
