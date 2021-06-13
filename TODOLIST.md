@@ -6,7 +6,7 @@ BASE MODE:
 Inital Setup
     [x] npm install all packages (logger, react router, redux, redux react)
     [x] configure database and pool.js link
-    [x] router with all get and post routes (test post router might need 2nd half i deleted)
+    [x] router with all get and post routes
     [x] set up redux and provider
     [x] set up reducers (one for each component?)
 Components
@@ -44,7 +44,6 @@ Components
         [x] handlevaluechange
         [x] return/render
         [x] route change
-        -(still review this page use selectors might be incorrect)
     [ ] Reset page 6
         [x] import export
         [ ] dispatch reset submit call

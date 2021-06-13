@@ -31,13 +31,13 @@ function App() {
       <Route path='/support'>
         <Support />
       </Route>
-      <Route path='/comments' exact>
+      <Route path='/comments'>
         <Comments />
       </Route>
-      <Route path='/review' exact>
+      <Route path='/review'>
         <Review />
       </Route>
-      <Route path='/success' exact>
+      <Route path='/success'>
         <Success />
       </Route>
     </div>
