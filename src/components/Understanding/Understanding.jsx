@@ -8,7 +8,7 @@ function Understanding() {
     // make history accessible through 'history'
     const history = useHistory();
 
-    //manages state of feeling variable
+    //manages state of understanding variable
     let [understanding, setUnderstanding] =useState('1')
 
     //handles state change of radio input
@@ -18,7 +18,7 @@ function Understanding() {
             event.target.value,
         )
     }
-
+    //handles next button and dispatch & page change
     const addUnderstanding = (event) => {
         event.preventDefault();
         

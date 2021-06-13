@@ -19,6 +19,7 @@ function Feeling() {
         )
     }
 
+    //handles next button and dispatch & page change
     const addFeeling = (event) => {
         event.preventDefault();
         
