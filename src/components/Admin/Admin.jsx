@@ -6,7 +6,8 @@ import TableCell from '@material-ui/core/TableCell';
 import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
-import Button from '@material-ui/core/Button';
+
+import AdminInfo from './AdminInfo'
 
 
 function Admin() {
@@ -31,12 +32,6 @@ function Admin() {
             })
     }
 
-    const deleteItem = () => {
-        axios.delete('/feedback')
-    }
-
-    console.log(feedback)
-
     return (
         <div>
             <TableContainer className='card admin'>
@@ -52,16 +47,9 @@ function Admin() {
               </TableHead>
               <TableBody>
                 {feedback.map((info) => (
-                  <TableRow key={info.id}>
-                    <TableCell align="right">{info.feeling}</TableCell>
-                    <TableCell align="right">{info.understanding}</TableCell>
-                    <TableCell align="right">{info.support}</TableCell>
-                    <TableCell align="right">{info.comments}</TableCell>
-                    <TableCell align="right"><Button 
-                    onClick={deleteItem}
-                    variant="contained" 
-                    color="primary">Delete</Button></TableCell>
-                  </TableRow>
+                    <TableRow key={info.id}>
+                    <AdminInfo  getFeedback={getFeedback} key={info.id} info={info}/>
+                    </TableRow>
                 ))}
               </TableBody>
             </Table>
