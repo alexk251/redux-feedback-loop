@@ -13,31 +13,31 @@ Components
     [x] App.js
         [x] components import and setup component files
         [x] routes to components
-    [ ] Feeling page 1
+    [x] Feeling page 1
         [x] import export
-        [ ] dispatch/submit to reducer
-        [ ] handlevaluechange
-        [ ] input validation
-        [ ] return/render
-    [ ] Understanding page 2
+        [x] dispatch/submit to reducer
+        [x] handlevaluechange
+        [x] input validation
+        [x] return/render
+    [x] Understanding page 2
         [x] import export
-        [ ] dispatch/submit to reducer
-        [ ] handlevaluechange
-        [ ] input validation
-        [ ] return/render
-    [ ] Support 3
+        [x] dispatch/submit to reducer
+        [x] handlevaluechange
+        [x] input validation
+        [x] return/render
+    [x] Support 3
         [x] import export
-        [ ] dispatch/submit to reducer
-        [ ] handlevaluechange
-        [ ] input validation
-        [ ] route change
-        [ ] return/render
-    [ ] comments 4
+        [x] dispatch/submit to reducer
+        [x] handlevaluechange
+        [x] input validation
+        [x] route change
+        [x] return/render
+    [x] comments 4
         [x] import export
-        [ ] dispatch/submit to reducer
-        [ ] handlevaluechange
-        [ ] return/render
-        [ ] route change
+        [x] dispatch/submit to reducer
+        [x] handlevaluechange
+        [x] return/render
+        [x] route change
     [x] Review and Submit 5
         [x] import export
         [x] dispatch/submit to database
