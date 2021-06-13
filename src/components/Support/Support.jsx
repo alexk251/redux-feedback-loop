@@ -28,14 +28,14 @@ function Support() {
             payload: support
         })
 
-        history.push('/understanding')
+        history.push('/comments')
     }
 
     return (
         <>
             <form>
                 <div>
-                    How are you doing today?
+                    How well are you being supported?
                     <br/>
                     <div onChange={handleChange}>
                     <label>

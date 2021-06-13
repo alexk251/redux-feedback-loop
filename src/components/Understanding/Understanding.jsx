@@ -34,7 +34,7 @@ function Understanding() {
         <>
             <form>
                 <div>
-                    How are you doing today?
+                    How well are you understanding the content?
                     <br/>
                     <div onChange={handleChange}>
                     <label>
