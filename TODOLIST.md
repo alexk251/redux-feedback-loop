@@ -61,7 +61,7 @@ STRETCH
     [x] /admin route
     [x] displays database from newest to oldest
     [x] allow user to delete existing feedback
-[ ] UPDATE README
-[ ] DEPLOY TO HEROKU
+[x] UPDATE README
+[x] DEPLOY TO HEROKU
 
 

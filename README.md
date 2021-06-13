@@ -2,6 +2,11 @@
 
 ### SETUP
 
+you can visit the website here:
+https://nameless-everglades-44153.herokuapp.com/#/
+
+or
+
 Create your database and tables using the provided `data.sql` file. Start the server.
 
 ```
