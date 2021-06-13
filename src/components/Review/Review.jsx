@@ -1,12 +1,15 @@
 import axios from 'axios';
 import React from 'react';
 import { useHistory } from 'react-router';
-import { useSelector } from 'react-redux'
+import { useSelector ,useDispatch } from 'react-redux';
 import { useState } from "react";
 
 
 function Review() {
 
+    // make use dispatch accessible through 'dispatch'
+    const dispatch = useDispatch();
+    // make history accessible through 'history'
     const history = useHistory();
 
     //selecting varibles from the store of reducers
@@ -20,6 +23,7 @@ function Review() {
     const [UpdateUnderstanding, setUpdateUnderstanding] = useState('1');
     const [updateSupport,setUpdateSupport] = useState('1');
     const [updateComments,setUpdateComments] = useState('');
+    //holds states for toggling conditional renders of inputs
     const [toggleFeeling,setToggleFeeling] =useState(true);
     const [toggleUnderstanding,setToggleUnderstanding] =useState(true);
     const [toggleSupport,setToggleSupport] = useState(true);
@@ -74,18 +78,38 @@ function Review() {
     }
 
     const toggleUpdateFeeling = () => {
+        event.preventDefault();
+        dispatch({
+            type: 'ADD_FEELING',
+            payload: updateFeeling
+        })
         setToggleFeeling(!toggleFeeling);
     }
 
     const toggleUpdateUnderstanding = () => {
+        event.preventDefault();
+        dispatch({
+            type: 'ADD_UNDERSTANDING',
+            payload: UpdateUnderstanding
+        })
         setToggleUnderstanding(!toggleUnderstanding);
     }
 
     const toggleUpdateSupport = () => {
+        event.preventDefault();
+        dispatch({
+            type: 'ADD_SUPPORT',
+            payload: updateSupport
+        })
         setToggleSupport(!toggleSupport);
     }
 
     const toggleUpdateComments = () => {
+        event.preventDefault();
+        dispatch({
+            type: 'ADD_COMMENTS',
+            payload: updateComments
+        })
         setToggleComments(!toggleComments);
     }
 
