@@ -36,7 +36,7 @@ function Support() {
             <form>
                 <div>
                     How well are you being supported?
-                    <br/>
+                    <h6>(A value must be provided)</h6>
                     <div onChange={handleChange}>
                     <label>
                     <input 

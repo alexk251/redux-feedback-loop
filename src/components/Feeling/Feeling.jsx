@@ -36,7 +36,7 @@ function Feeling() {
             <form>
                 <div>
                     How are you doing today?
-                    <br/>
+                    <h6>(A value must be provided)</h6>
                     <div onChange={handleChange}>
                     <label>
                     <input 

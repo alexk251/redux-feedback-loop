@@ -35,7 +35,7 @@ function Understanding() {
             <form>
                 <div>
                     How well are you understanding the content?
-                    <br/>
+                    <h6>(A value must be provided)</h6>
                     <div onChange={handleChange}>
                     <label>
                     <input 
