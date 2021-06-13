@@ -44,14 +44,14 @@ Components
         [x] handlevaluechange
         [x] return/render
         [x] route change
-    [ ] Reset page 6
+    [x] Reset page 6
         [x] import export
-        [ ] dispatch reset submit call
-        [ ] return/render
-        [ ] route change to page 1
-        [ ] reset values in reducers
+        [x] dispatch reset submit call
+        [x] return/render
+        [x] route change to page 1
+        [x] reset values in reducers
 CSS
-    [ ] basic styling
+    [] basic styling
 
 
 STRETCH
