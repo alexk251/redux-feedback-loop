@@ -57,12 +57,10 @@ STRETCH
     ***COMPLETE IN ORDER***
 [x] UPDATE SCORES FROM REVIEW PAGE BEFORE SUBMISSION
 [x] STYLING with material UI (cards, snackbars, buttons, a nav bar, icons, and/or a theme.)
-[ ] ADMIN SECTION
-    [ ] /admin route
-    [ ] displays database from newest to oldest
-    [ ] allow user to delete existing feedback
-        [ ] prompt user to confirm prior to delete (see wireframe)
-    [ ] Add the ability to flag an existing feedback entry for further review on the /admin view.
+[x] ADMIN SECTION
+    [x] /admin route
+    [x] displays database from newest to oldest
+    [x] allow user to delete existing feedback
 [ ] UPDATE README
 [ ] DEPLOY TO HEROKU
 
