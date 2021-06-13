@@ -9,7 +9,7 @@ function Feeling() {
     const history = useHistory();
 
     //manages state of feeling variable
-    let [feeling, setFeeling] =useState('')
+    let [feeling, setFeeling] =useState('1')
 
     //handles state change of radio input
     const handleChange = (event) => {
