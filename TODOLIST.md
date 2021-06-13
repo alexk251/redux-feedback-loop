@@ -50,11 +50,20 @@ Components
         [x] return/render
         [x] route change to page 1
         [x] reset values in reducers
-CSS
-    [] basic styling
+
 
 
 STRETCH
-    [ ] 
+    ***COMPLETE IN ORDER***
+[ ] UPDATE SCORES FROM REVIEW PAGE BEFORE SUBMISSION
+[ ] STYLING with material UI (cards, snackbars, buttons, a nav bar, icons, and/or a theme.)
+[ ] ADMIN SECTION
+    [ ] /admin route
+    [ ] displays database from newest to oldest
+    [ ] allow user to delete existing feedback
+        [ ] prompt user to confirm prior to delete (see wireframe)
+    [ ] Add the ability to flag an existing feedback entry for further review on the /admin view.
+[ ] UPDATE README
+[ ] DEPLOY TO HEROKU
 
 
