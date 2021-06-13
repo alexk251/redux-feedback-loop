@@ -1,5 +1,7 @@
 import { useHistory } from 'react-router';
-import {useDispatch} from 'react-redux'
+import {useDispatch} from 'react-redux';
+import Button from '@material-ui/core/Button';
+import '../App/App.css'
 
 function Success() {
     // make use dispatch accessible through 'dispatch'
@@ -14,11 +16,14 @@ function Success() {
     }
 
     return (
-        <>
-            Thank you
+        <div className='card'>
+            <h2>Thank you</h2>
             <br />
-            <button onClick={reset}>Leave New Feedback</button>
-        </>
+            <br />
+            <Button onClick={reset}
+            variant="contained" 
+            color="primary">Leave New Feedback</Button>
+        </div>
     )
 
 }

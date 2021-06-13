@@ -3,6 +3,8 @@ import React from 'react';
 import { useHistory } from 'react-router';
 import { useSelector ,useDispatch } from 'react-redux';
 import { useState } from "react";
+import Button from '@material-ui/core/Button';
+import '../App/App.css';
 
 
 function Review() {
@@ -114,13 +116,15 @@ function Review() {
     }
 
     return (
-        <>
+        <div className='card'>
             <h1>Review Your Feedback</h1>
             <div>
             {toggleFeeling ?
                 <>
                 <p>Feeling:{feeling.feeling}</p>
-                <button onClick={toggleUpdateFeeling}>Update Feeling</button>
+                <Button onClick={toggleUpdateFeeling}
+                variant="contained" 
+                color="primary">Update Feeling</Button>
                 </>
                 :
                 <form>
@@ -174,13 +178,17 @@ function Review() {
                     5
                     </label>
                         </div>
-                        <button onClick={toggleUpdateFeeling}>Finalize Feeling</button>
+                        <Button onClick={toggleUpdateFeeling}
+                        variant="contained" 
+                        color="primary">Finalize Feeling</Button>
                 </form>
 }
             {toggleUnderstanding ?
             <>
                     <p>Understanding:{understanding.understanding}</p>
-                    <button onClick={toggleUpdateUnderstanding}>Update Understanding</button>
+                    <Button onClick={toggleUpdateUnderstanding}
+                    variant="contained" 
+                    color="primary">Update Understanding</Button>
             </>
                     :
                 <form>
@@ -234,13 +242,17 @@ function Review() {
                     5
                     </label>
                         </div>
-                        <button onClick={toggleUpdateUnderstanding}>Finalize Understanding</button>
+                        <Button onClick={toggleUpdateUnderstanding}
+                        variant="contained" 
+                        color="primary">Finalize Understanding</Button>
                 </form>
 }
                 {toggleSupport ?
                 <>
                     <p>Support:{support.support}</p>
-                    <button onClick={toggleUpdateSupport}>Update Support</button>
+                    <Button onClick={toggleUpdateSupport}
+                    variant="contained" 
+                    color="primary">Update Support</Button>
                 </>
                     :
                     <form>
@@ -296,14 +308,18 @@ function Review() {
                     </label>
                     </div>
                     </div>
-                    <button onClick={toggleUpdateSupport}>Finalize Support</button>
+                    <Button onClick={toggleUpdateSupport}
+                    variant="contained" 
+                    color="primary">Finalize Support</Button>
                     </form>
 }
                 {toggleComments ?
                 <>
                     
                     <p>Comments:{comments.comments}</p> 
-                    <button onClick={toggleUpdateComments}>Update Comments</button>
+                    <Button onClick={toggleUpdateComments} 
+                    variant="contained" 
+                    color="primary">Update Comments</Button>
                 </>
                     :
                     <form>
@@ -314,13 +330,18 @@ function Review() {
                     <input type='text' />
                     </div>
                     </div>
-                    <button onClick={toggleUpdateComments}>Finalize Comments</button>
+                    <Button onClick={toggleUpdateComments} 
+                    variant="contained" 
+                    color="primary">Finalize Comments</Button>
             </form>
                 }
             </div>
             <br />
-                {toggleFeeling && toggleUnderstanding && toggleSupport && toggleComments ?  <button onClick={handleSubmit}>Submit</button> : ''}
-        </>
+                {toggleFeeling && toggleUnderstanding && toggleSupport && toggleComments 
+                ?  <Button onClick={handleSubmit}
+                variant="contained" 
+                color="primary">Submit</Button> : ''}
+        </div>
     )
 
 }

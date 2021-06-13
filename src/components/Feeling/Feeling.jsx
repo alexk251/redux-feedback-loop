@@ -1,6 +1,8 @@
 import { useHistory } from 'react-router';
 import {useDispatch} from 'react-redux';
 import  { useState } from "react";
+import Button from '@material-ui/core/Button';
+import '../App/App.css';
 
 function Feeling() {
     // make use dispatch accessible through 'dispatch'
@@ -34,10 +36,10 @@ function Feeling() {
     return (
         <>
             <form>
-                <div>
+                <div className='card'>
                     How are you doing today?
                     <h6>(A value must be provided)</h6>
-                    <div onChange={handleChange}>
+                    <div onChange={handleChange} >
                     <label>
                     <input 
                     
@@ -86,7 +88,9 @@ function Feeling() {
                     </label>
                     </div>
                     <br/>
-                    <button onClick={addFeeling}>Next</button>
+                    <Button onClick={addFeeling} 
+                    variant="contained" 
+                    color="primary">Next</Button>
                 </div>
             </form>
         </>

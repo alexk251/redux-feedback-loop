@@ -1,6 +1,8 @@
 import { useHistory } from 'react-router';
 import {useDispatch} from 'react-redux';
 import  { useState } from "react";
+import Button from '@material-ui/core/Button';
+import '../App/App.css';
 
 function Support() {
     // make use dispatch accessible through 'dispatch'
@@ -34,7 +36,7 @@ function Support() {
     return (
         <>
             <form>
-                <div>
+                <div className='card'>
                     How well are you being supported?
                     <h6>(A value must be provided)</h6>
                     <div onChange={handleChange}>
@@ -86,7 +88,9 @@ function Support() {
                     </label>
                     </div>
                     <br/>
-                    <button onClick={addSupport}>Next</button>
+                    <Button onClick={addSupport}
+                    variant="contained" 
+                    color="primary">Next</Button>
                 </div>
             </form>
         </>

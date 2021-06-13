@@ -1,6 +1,8 @@
 import { useHistory } from 'react-router';
 import {useDispatch} from 'react-redux';
 import  { useState } from "react";
+import Button from '@material-ui/core/Button';
+import '../App/App.css';
 
 function Comments() {
     // make use dispatch accessible through 'dispatch'
@@ -34,14 +36,16 @@ function Comments() {
     return (
         <>
             <form>
-                <div>
+                <div className='card'>
                     Do you have any comments?
                     <br/>
                     <div onChange={handleChange}>
                     <input type='text' />
                     </div>
                     <br/>
-                    <button onClick={addComments}>Next</button>
+                    <Button onClick={addComments}
+                    variant="contained" 
+                    color="primary">Next</Button>
                 </div>
             </form>
         </>

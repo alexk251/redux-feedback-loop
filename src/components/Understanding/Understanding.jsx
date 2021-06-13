@@ -1,6 +1,8 @@
 import { useHistory } from 'react-router';
 import {useDispatch} from 'react-redux';
 import  { useState } from "react";
+import Button from '@material-ui/core/Button';
+import '../App/App.css'
 
 function Understanding() {
     // make use dispatch accessible through 'dispatch'
@@ -33,7 +35,7 @@ function Understanding() {
     return (
         <>
             <form>
-                <div>
+                <div className='card'>
                     How well are you understanding the content?
                     <h6>(A value must be provided)</h6>
                     <div onChange={handleChange}>
@@ -85,7 +87,9 @@ function Understanding() {
                     </label>
                     </div>
                     <br/>
-                    <button onClick={addUnderstanding}>Next</button>
+                    <Button onClick={addUnderstanding} 
+                    variant="contained" 
+                    color="primary">Next</Button>
                 </div>
             </form>
         </>
