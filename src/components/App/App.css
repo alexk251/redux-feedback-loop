@@ -29,3 +29,6 @@ h4 {
   max-width: 400px;
   margin: auto;
 }
+.admin {
+  max-width:fit-content;
+}

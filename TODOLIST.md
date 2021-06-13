@@ -56,7 +56,7 @@ Components
 STRETCH
     ***COMPLETE IN ORDER***
 [x] UPDATE SCORES FROM REVIEW PAGE BEFORE SUBMISSION
-[ ] STYLING with material UI (cards, snackbars, buttons, a nav bar, icons, and/or a theme.)
+[x] STYLING with material UI (cards, snackbars, buttons, a nav bar, icons, and/or a theme.)
 [ ] ADMIN SECTION
     [ ] /admin route
     [ ] displays database from newest to oldest
