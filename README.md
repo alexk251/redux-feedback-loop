@@ -1,4 +1,7 @@
 # Redux-Feedback-loop
+![Screen Shot 2021-06-21 at 11 14 12 AM](https://user-images.githubusercontent.com/54006827/122794556-01a36900-d282-11eb-87b5-6fe4d6300451.png)
+![Screen Shot 2021-06-21 at 11 14 36 AM](https://user-images.githubusercontent.com/54006827/122794576-06681d00-d282-11eb-9f2f-8eb5de2430a9.png)
+
 
 ### SETUP
 
